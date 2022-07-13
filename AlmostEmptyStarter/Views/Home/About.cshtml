@@ -1,0 +1,23 @@
+﻿@{
+	ViewData["Title"] = "About";
+}
+
+
+@*HTML Helper- Earl ASP.NET MVC Syntax*@
+@Html.ActionLink("Go Home", "Index", "Home")
+
+@*Tag Helper syntax-modern approach*@
+<a asp-controller="Home" asp-action="Index">Go Home</a>
+<a asp-controller="Home" asp-action="Audio">Audio</a>
+
+
+<div class="sidenav">
+  <a asp-controller="Home" asp-action="Index">Go Home</a>
+<a asp-controller="Home" asp-action="Audio">Audio</a>
+</div>
+
+<div class="content">
+  <h1>My about page</h1>
+<p>This is my about page</p>
+</div>
+
